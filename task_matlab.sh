@@ -11,4 +11,4 @@ infile=$(sed -n -e "$SGE_TASK_ID p" files_to_do.txt)
 # start code
 module load matlab
 
-matlab -nodisplay -r "getAverages('data/$infile','${infile%.mat})'; exit"
+matlab -nodisplay -r "getAverages('data/$infile','${infile%.mat}');exit"

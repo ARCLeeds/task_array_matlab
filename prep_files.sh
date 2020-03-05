@@ -13,4 +13,4 @@ mv *.mat data/
 
 # create files_to_do.txt for task array
 
-ls -l data/*.mat | awk '{print $9}' > files_to_do.txt
+while read filename;do echo ${filename#data/};done < <(ls data/*.mat) > files_to_do.txt

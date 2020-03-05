@@ -1,0 +1,6 @@
+# gitignore for this task array with matlab example
+
+*.e*
+*.o*
+logs/*
+

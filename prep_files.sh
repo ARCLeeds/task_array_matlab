@@ -1,6 +1,7 @@
 # shell script to prep files
 
-files=$(ls data/*.csv)
+# pull csv files out
+files=$(ls data/ | grep csv)
 
 for file in $files;
 do

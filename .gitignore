@@ -4,4 +4,4 @@
 *.o*
 logs/*
 data/*.mat
-*_.mat
+*_*.mat

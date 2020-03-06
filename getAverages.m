@@ -10,7 +10,7 @@ result = mean(table2array(struct2array(data)))
 
 % get environment variable 
 % in this case the task array task ID (number of task)
-task_no = getenv('$SGE_TASK_ID')
+task_no = getenv('SGE_TASK_ID')
 
 % create a filename string variable
 % use strcat here to concatenate strings

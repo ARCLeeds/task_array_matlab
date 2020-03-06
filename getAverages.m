@@ -3,7 +3,7 @@ function getAvg = getAverages(datafile, filename)
 % simple function to calculate averages of datatable
 data = load(datafile)
 
-result = mean(data{:,1})
+result = mean(table2array(struct2array(data)))
 
 task_no = getenv('$SGE_TASK_ID')
 
